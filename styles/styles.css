@@ -21,7 +21,9 @@ nav a {
     box-shadow: 0 0 30px gray;
  }
 
- p { padding: 0px;}
+ p {
+   padding: 0px;
+ }
  
  main {
    max-width: 840px;
@@ -30,7 +32,7 @@ nav a {
  aside {
    width: 20rem;
    margin: 1rem;
-   border: 1px solid rgb(0 0 0 / 0.2);
+   border: 1px solid rgb(0, 0, 0, 0.2);
    padding: 1rem;
    background-color: #eee;
    color: #333;
