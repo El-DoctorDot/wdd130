@@ -57,7 +57,7 @@
       position: relative;
       background-image: url('images/rafting.jpg');
       background-size: cover;
-      height: 4400px;
+      height: 400px;
   }
   
   .hero img {
@@ -68,20 +68,26 @@
   
   .hero h1 {
       position:absolute;
-      top: 20%;
-      left: 5%;
+      top: 0%;
+      left: 0%;
+      right: 0%;
+      background-color: rgba(0,0,0,0.6);
+      padding-left: 33%;
+      padding-right: 33%;
+      border-radius: 1px;
       color: var(--secondary-color);
       font-size: 3rem;
   }
   
   .hero article {
       position:absolute;
-      top: 50%;
-      left: 5%;
+      top: 60%;
+      left: 13%;
+      right: 13%;
       transform: translateY(-50%);
       color: var(--accent-color2);
       background-color: rgba(0,0,0,0.6);
-      padding: 20px;
+      padding: 10px;
       border-radius: 8px;
   }
   
@@ -89,5 +95,6 @@
       float: right;
       margin-left: 20px;
       width: 200px;
+      
   }
 
