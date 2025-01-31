@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #FFC107;
-    --secondary-color: #1976D2;
-    --accent-color1: #D32F2F;
-    --accent-color2: #616161;
+    --primary-color: #00321f;
+    --secondary-color: #1c1c1c;
+    --accent-color1: #B08D57;
+    --accent-color2: white;
   }
   
   body {
@@ -10,10 +10,64 @@
       color: var(--accent-color2);
   }
   
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center; 
+    padding:3px 300px; 
+    background-color: var(--secondary-color);
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.logo-box img {
+    max-width: 150px; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-box img:hover {
+    transform: scale(1.05); 
+}
+
   h1 {
-      color: var(--secondary-color);
+      color: var(--accent-color1);
   }
-  
+
+  nav {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px; 
+}
+
+.nav ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    justify-content: flex-start; 
+}
+
+.nav ul li {
+    margin-left: 20px; 
+}
+
+.nav ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 10px 15px; 
+    border: 2px solid var(--accent-color2); 
+    transition: all 0.3s ease; 
+}
+
+
+.nav ul li a:hover {
+    color: #f4a261; 
+    background-color: rgba(244, 166, 97, 0.1); 
+}
+
+
   h2 {
       color: var(--accent-color1);
   }
@@ -40,13 +94,34 @@
       background-color: var(--accent-color1);
   }
   
-  .sociallinks a {
-      text-decoration: none;
-  }
-  
-  .sociallinks a:hover {
-      color: var(--primary-color);
-  }
+  footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    background-color: var(--secondary-color); 
+    color: white; 
+}
+
+footer p {
+    margin: 0; 
+}
+
+.sociallinks {
+    display: flex;
+    gap: 15px;
+}
+
+.sociallinks img {
+    width: 30px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.sociallinks img:hover {
+    transform: scale(1.1); 
+}
+
   
   main {
       max-width: 1200px;
@@ -56,7 +131,6 @@
   .hero {
       position: relative;
       background-image: url('images/rafting.jpg');
-      background-size: cover;
       height: 400px;
   }
   
@@ -71,11 +145,10 @@
       top: 0%;
       left: 0%;
       right: 0%;
-      background-color: rgba(0,0,0,0.6);
       padding-left: 33%;
       padding-right: 33%;
       border-radius: 1px;
-      color: var(--secondary-color);
+      color: var(--accent-color1);
       font-size: 3rem;
   }
   
@@ -98,3 +171,81 @@
       
   }
 
+  .history {
+    padding: 20px;
+    background-color:#1c1c1c; 
+    margin: 10px 0; 
+}
+
+.history h2 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--accent-color1); 
+    margin-bottom: 20px; 
+    
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.history-content p {
+    color: var(--accent-color2); 
+    line-height: 1.8; 
+    text-align: center;
+}
+
+.history-content img {
+    width: 300px; 
+    height: 200px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: block;
+    margin: 0 auto; 
+    
+}
+
+.adventure-gallery {
+    padding: 20px;
+    background-color: var(--secondary-color); 
+    margin: 20px 0; 
+    text-align: center; 
+}
+
+.adventure-gallery h2 {
+    font-size: 30px;
+    color: var(--accent-color1); 
+    margin-bottom: 20px; 
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    overflow-x: auto; 
+    padding: 10px 0; 
+}
+
+.gallery-container figure {
+    flex: 1; 
+    margin: 0; 
+    text-align: center; 
+    min-width: 180px; 
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container figcaption {
+    margin-top: 10px; 
+    color: var(--accent-color2); 
+    font-size: 1rem;
+    font-weight: bold; 
+}
