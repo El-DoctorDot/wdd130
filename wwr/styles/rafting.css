@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #00321f;
-    --secondary-color: #1c1c1c;
-    --accent-color1: #B08D57;
-    --accent-color2: white;
+    --primary-color: #0A1172;
+    --secondary-color: #000000;
+    --accent-color1: #FFFFFF;
+    --accent-color2: #FFFFFF;
   }
   
   body {
@@ -173,7 +173,7 @@ footer p {
 
   .history {
     padding: 20px;
-    background-color:#1c1c1c; 
+    background-color:var(--secondary-color); 
     margin: 10px 0; 
 }
 
