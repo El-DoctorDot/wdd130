@@ -53,7 +53,7 @@
 
 .nav ul li a {
     text-decoration: none; 
-    color: white; 
+    color: var(--accent-color1); 
     font-size: 18px; 
     font-weight: bold; 
     padding: 10px 15px; 
@@ -63,7 +63,7 @@
 
 
 .nav ul li a:hover {
-    color: #f4a261; 
+    color: var(--accent-color2); 
     background-color: rgba(244, 166, 97, 0.1); 
 }
 
@@ -341,7 +341,7 @@ textarea {
     max-width: 600px; 
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #ccc; 
+    border: 1px solid #FFFFFF; 
     border-radius: 5px; 
     margin-bottom: 15px;  
 }
