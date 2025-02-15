@@ -171,6 +171,10 @@ footer p {
       
   }
 
+  .hero article h2 {
+    color: var(--accent-color1);
+  }
+
   .history {
     padding: 20px;
     background-color:var(--secondary-color); 
