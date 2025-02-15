@@ -616,7 +616,7 @@ section#trips-table {
 }
 
 h2 {
-    color: var(--secondary-color);
+    color: var(--accent-color1);
     font-size: 24px;
     margin-bottom: 10px;
 }
