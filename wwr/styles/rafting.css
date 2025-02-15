@@ -563,6 +563,10 @@ tr:nth-child(even) {
     color: var(--accent-color1);
 }
 
+.newsletter{
+    color: var(--accent-color1);
+}
+
 .trips {
     text-align: center;
     margin: 20px;
